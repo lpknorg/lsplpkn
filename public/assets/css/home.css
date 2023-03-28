@@ -1,0 +1,32 @@
+.back-slick{
+    position: relative;
+}
+.your-schema{
+    position: absolute;
+}
+.schema-prev{
+    position: absolute;
+    top: 30%;
+    background-color:#106EEA;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 4px 0 2px;
+    border-radius: 2px 4px 4px 2px;
+    }
+
+.schema-prev:hover,.schema-next:hover{
+    background-color:white;
+    color: #106EEA;
+    cursor:pointer;
+    }
+
+.schema-next{
+    position: absolute;
+    top: 30%;
+    right: 8px;
+    background-color:#106EEA;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 4px 0 2px;
+    border-radius: 2px 4px 4px 2px;
+}
