@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('admin', 'admin.index');
+// Route::view('admin', 'admin.index');
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+
 Route::get('/', function () {
     return view('home');
     // return view('home');
@@ -34,4 +36,7 @@ Route::get('/contact', [App\Http\Controllers\ProfileController::class, 'contact'
 Route::get('/skemasertifikasi', [App\Http\Controllers\SertifikasiController::class, 'skemasertifikasi'])->name('skemasertifikasi');
 Route::get('/ujikompetensi', [App\Http\Controllers\SertifikasiController::class, 'ujikompetensi'])->name('ujikompetensi');
 Route::get('/sertifikat', [App\Http\Controllers\SertifikasiController::class, 'sertifikat'])->name('sertifikat');
+
+
+Route::get('/logout', [App\Http\Controllers\AdminController::class, 'logout'])->name('logout');
 
