@@ -168,7 +168,17 @@
                                 <li>
                                     <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
                                 </li>
-                                <li><a href="{{route('logout')}}"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                <!-- <li><a href="{{route('logout')}}"><i class="icon-key"></i> <span>Logout</span></a></li> -->
+                                <li>
+                                    <a href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                        <i class="icon-key"></i> <span>{{ __('Logout') }}</span>
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </li>
                             </ul>
                         </div>
                     </div>

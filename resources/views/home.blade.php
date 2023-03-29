@@ -70,7 +70,7 @@
                             <div class="member-img">
                                 <img src="{{ asset('images') }}/home/1.png" class="img-fluid" alt="">
                                 <div class="social schema-more">
-                                    <a href="">Selengkapnya</i></a>
+                                    <a href="{{ route('procurement', 'Procurement Staff') }}">Selengkapnya</i></a>
                                 </div>
                             </div>
                             </div>
@@ -80,7 +80,7 @@
                             <div class="member-img">
                                 <img src="{{ asset('images') }}/home/2.png" class="img-fluid" alt="">
                                 <div class="social schema-more">
-                                    <a href="">Selengkapnya</i></a>
+                                    <a href="{{ route('procurement',  'Procurement Senior Staff') }}">Selengkapnya</i></a>
                                 </div>
                             </div>
                             </div>
@@ -90,7 +90,7 @@
                             <div class="member-img">
                                 <img src="{{ asset('images') }}/home/3.png" class="img-fluid" alt="">
                                 <div class="social schema-more">
-                                    <a href="">Selengkapnya</i></a>
+                                    <a href="{{ route('procurement',  'Procurement Coordinator') }}">Selengkapnya</i></a>
                                 </div>
                             </div>
                             </div>
@@ -100,7 +100,7 @@
                             <div class="member-img">
                                 <img src="{{ asset('images') }}/home/4.png" class="img-fluid" alt="">
                                 <div class="social schema-more">
-                                    <a href="">Selengkapnya</i></a>
+                                    <a href="{{ route('procurement',  'Procurement Supervisor') }}">Selengkapnya</i></a>
                                 </div>
                             </div>
                             </div>
@@ -110,7 +110,7 @@
                             <div class="member-img">
                                 <img src="{{ asset('images') }}/home/5.png" class="img-fluid" alt="">
                                 <div class="social schema-more">
-                                    <a href="">Selengkapnya</i></a>
+                                    <a href="{{ route('procurement',  'Procurement Asistant Manager') }}">Selengkapnya</i></a>
                                 </div>
                             </div>
                             </div>
@@ -120,7 +120,7 @@
                             <div class="member-img">
                                 <img src="{{ asset('images') }}/home/6.png" class="img-fluid" alt="">
                                 <div class="social schema-more">
-                                    <a href="">Selengkapnya</i></a>
+                                    <a href="{{ route('procurement',  'Procurement Manager') }}">Selengkapnya</i></a>
                                 </div>
                             </div>
                             </div>

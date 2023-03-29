@@ -20,4 +20,9 @@ class SertifikasiController extends Controller
     {
         return view('sertifikat');
     }
+
+    public function procurement(Request $request, String $name)
+    {
+        return view('procurement',['procurement' => $request->name]);
+    }
 }

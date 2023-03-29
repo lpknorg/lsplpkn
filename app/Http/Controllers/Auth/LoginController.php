@@ -42,7 +42,10 @@ class LoginController extends Controller
     {
         if (\Auth::user()->roles->pluck('name')[0] == "Admin") {
             return '/admin';
+        }else if(\Auth::user()->roles->pluck('name')[0] == "Super Admin"){
+            return '/superadmin';
+        }else {
+            return '/home';
         }
-        return '/home';
     }
 }
